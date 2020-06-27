@@ -82,7 +82,6 @@
                     <v-sheet
                         :color="(section.section.bgColor)? section.section.bgColor : 'transparent'"
                         height="100%"
-                        light="false"
                         tile
                     >
                         <v-container class="py-10" style="height:100%;min-height:50vh">
