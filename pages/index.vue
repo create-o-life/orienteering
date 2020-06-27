@@ -78,6 +78,7 @@
                 <v-img
                     :src="(section.section.bgImg)? section.section.bgImg.url : undefined"
                     :min-height="(section.section.max)? '100vh' : undefined"
+                    light="false"
                 >
                     <v-sheet
                         :color="(section.section.bgColor)? section.section.bgColor : 'transparent'"
