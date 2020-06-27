@@ -78,13 +78,14 @@
                 <v-img
                     :src="(section.section.bgImg)? section.section.bgImg.url : undefined"
                     :min-height="(section.section.max)? '100vh' : undefined"
+                    :height="(section.section.bgImg)? 'auto' : undefined"
                 >
                     <v-sheet
                         :color="(section.section.bgColor)? section.section.bgColor : 'transparent'"
                         height="100%"
                         tile
                     >
-                        <v-container class="py-10" style="height:100%;min-height:50vh">
+                        <v-container class="py-10" :style="(section.section.bgImg)? 'height:100%;' : 'height:100%;min-height:50vh;'">
                             <v-row style="height:100%;" class="justify-center align-center">
                                 <v-col
                                     v-if="section.section.contents"
